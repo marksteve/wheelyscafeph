@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body, input, button {
+  font: 20px/1.5 brandon-grotesque, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, button, .btn {
+  border: 0;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+button,
+.btn {
+  background: #ed2323;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1064px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background: #ed2323;
+  height: 50px;
+  padding: 4px 0;
+  font-size: 16px;
+}
+
+header img {
+  height: 42px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+nav a {
+  color: white;
+  opacity: 0.5;
+  line-height: 42px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+nav a.active,
+nav a:hover {
+  opacity: 1;
+}
+
+.hero {
+  background: url(../images/hero-bg.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 100%;
+  transform-origin: 50% 50%;
+  transform: rotate(-1deg);
+  text-transform: uppercase;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.hero h1 div:first-child {
+  font-size: 34px;
+  letter-spacing: 4px;
+}
+
+.hero h1 div:last-child {
+  font-size: 52px;
+  letter-spacing: 6px;
+}
+
+.hero form {
+  position: absolute;
+  left: 0;
+  bottom: 35%;
+  width: 100%;
+  text-align: center;
+}
+
+.best-coffee {
+  background: url(../images/best-coffee-badge.png) no-repeat center 60px;
+  padding: 160px 0 60px;
+  width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+}
+
+.best-coffee strong {
+  color: #ed2323;
+}
+
+hr {
+  width: 350px;
+  border: 1px solid #cecece;
+  margin: 0 auto;
+}
+
+.learn-more {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.learn-more p:first-child {
+  margin-bottom: 20px;
+}
