@@ -1,100 +1,20 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
-body, input, button {
-  font: 20px/1.5 brandon-grotesque, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-input, button, .btn {
-  border: 0;
-  padding: 10px 20px;
-  display: inline-block;
-}
-
-button,
-.btn {
-  background: #ed2323;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover,
-.btn:hover {
-  background: #ff624e;
-}
-
-.container {
-  max-width: 1064px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-}
-
-header {
-  background: #ed2323;
-  height: 50px;
-  padding: 4px 0;
-  font-size: 16px;
-}
-
-header img {
-  height: 42px;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  text-align: right;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-left: 2em;
-}
-
-nav a {
-  color: white;
-  opacity: 0.5;
-  line-height: 42px;
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-nav a.active,
-nav a:hover {
-  opacity: 1;
-}
-
 .hero {
-  background: url(../images/hero-bg.jpg) no-repeat;
-  background-size: cover;
-  padding-bottom: 50%;
+  background: url(../images/hero-bg.jpg) no-repeat center bottom;
+  background-size: 100%;
+  padding-bottom: 56%;
   position: relative;
   text-align: center;
+}
+
+.hero:before {
+  content: ' ';
+  display: 'block';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
@@ -107,6 +27,7 @@ nav a:hover {
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
   font-style: italic;
   line-height: 1.2;
+  margin: 0 0 1.5em;
 }
 
 .hero h1 .line-1 {
@@ -126,8 +47,8 @@ nav a:hover {
 
 .best-coffee {
   background: url(../images/best-coffee-badge.png) no-repeat center 60px;
-  background-size: 100px;
-  padding: 160px 0 60px;
+  background-size: 130px;
+  padding: 190px 0 60px;
   width: 520px;
   margin: 0 auto;
   text-align: center;

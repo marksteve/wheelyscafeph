@@ -6,18 +6,18 @@
 <title>Wheelys Café — Philippines</title>
 <script src="//use.typekit.net/fhk1tix.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
-<link rel="shortcut icon" href="static/images/favicon.ico">
+<link rel="shortcut icon" href="./static/images/favicon.ico">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-<link rel="stylesheet" href="static/css/index.css">
+<link rel="stylesheet" href="./static/css/common.css">
+<link rel="stylesheet" href="./static/css/index.css">
 <body>
   <header>
     <div class="container">
-      <img src="static/images/logo.svg">
+      <h1>Wheelys</h1>
       <nav>
         <ul>
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/franchise.html">Franchise</a></li>
+          <li><a href="./" class="active">Home</a></li>
+          <li><a href="./about.html">About</a></li>
         </ul>
       </nav>
     </div>
@@ -31,10 +31,10 @@
       <form action="https://www.getform.org/f/a8684636-2b7b-4ae1-8fa9-b42e53641bb8" method="POST">
         <input name="mobile" type="text" placeholder="Enter mobile number"><button>Notify me!</button>
       </form>
-      <div id="thanks" class="btn">
+      <a href="" id="thanks" class="btn">
         Thanks for your interest!<br>
         We'll let you know when we're ready!
-      </div>
+      </a>
     </div>
   </section>
   <section class="best-coffee">
@@ -45,10 +45,10 @@
   <hr>
   <section class="learn-more">
     <p>Let's start an organic coffee revolution!</p>
-    <p><a class="btn" href="/franchise.html">Learn more about franchising</a></p>
+    <p><a class="btn" href="./about.html#franchise">Learn more about franchising</a></p>
   </section>
   <script src="//cdn.polyfill.io/v2/polyfill.min.js?features=blissfuljs"></script>
-  <script src="static/js/bliss.js"></script>
+  <script src="./static/js/bliss.js"></script>
   <script>
   if (location.hash === '#thanks') {
     $('#thanks').style.display = 'inline-block';
