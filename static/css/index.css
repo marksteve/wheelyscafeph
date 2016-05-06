@@ -1,6 +1,6 @@
 .hero {
   background: url(../images/hero-bg.jpg) no-repeat center bottom;
-  background-size: 100%;
+  background-size: cover;
   padding-bottom: 56%;
   position: relative;
   text-align: center;
@@ -48,8 +48,8 @@
 .best-coffee {
   background: url(../images/best-coffee-badge.png) no-repeat center 60px;
   background-size: 130px;
-  padding: 190px 0 60px;
-  width: 520px;
+  padding: 190px 20px 60px;
+  max-width: 520px;
   margin: 0 auto;
   text-align: center;
   font-style: italic;
@@ -72,4 +72,10 @@ hr {
 
 .learn-more p:first-child {
   margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding-bottom: 150%;
+  }
 }
