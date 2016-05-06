@@ -26,6 +26,12 @@ button,
   background: #ed2323;
   color: white;
   font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+  background: #ff624e;
 }
 
 .container {
