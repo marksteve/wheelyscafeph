@@ -119,6 +119,7 @@ nav a:hover {
 
 .best-coffee {
   background: url(../images/best-coffee-badge.png) no-repeat center 60px;
+  background-size: 100px;
   padding: 160px 0 60px;
   width: 520px;
   margin: 0 auto;
