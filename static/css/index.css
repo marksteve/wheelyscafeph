@@ -40,6 +40,13 @@ button:hover,
   margin: 0 auto;
 }
 
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
 header {
   background: #ed2323;
   height: 50px;
@@ -87,12 +94,10 @@ nav a:hover {
   background-size: cover;
   padding-bottom: 50%;
   position: relative;
+  text-align: center;
 }
 
 .hero h1 {
-  position: absolute;
-  left: 0;
-  top: 35%;
   width: 100%;
   transform-origin: 50% 50%;
   transform: rotate(-1deg);
@@ -100,27 +105,23 @@ nav a:hover {
   color: white;
   text-transform: uppercase;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
   font-style: italic;
   line-height: 1.2;
 }
 
-.hero h1 div:first-child {
+.hero h1 .line-1 {
   font-size: 34px;
   letter-spacing: 4px;
 }
 
-.hero h1 div:last-child {
+.hero h1 .line-2 {
   font-size: 52px;
   letter-spacing: 6px;
 }
 
-.hero form {
-  position: absolute;
-  left: 0;
-  bottom: 35%;
-  width: 100%;
-  text-align: center;
+.hero form,
+.hero #thanks {
+  display: none;
 }
 
 .best-coffee {
