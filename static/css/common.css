@@ -123,3 +123,15 @@ nav a:hover {
   opacity: 1;
 }
 
+@media (max-width: 640px) {
+  input, button {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .social {
+    display: none;
+  }
+}
